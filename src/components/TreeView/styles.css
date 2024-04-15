@@ -1,0 +1,15 @@
+.menu-item {
+    width: 100%;
+    color: white;
+}
+
+.tree-list-container {
+    list-style: none;
+}
+
+.menu-list-container {
+    background-color: rgb(3, 48, 48);
+    height: 100vh;
+    width: 350px;
+    padding: 10px;
+}

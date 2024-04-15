@@ -1,0 +1,47 @@
+.accordian {
+    width: 500px;
+
+}
+
+.item {
+    border: 2px solid #575050;
+    margin: 0 0 10px 0;
+    padding: 10px 20px;
+    background-color: rgb(228 140 33 / 0%);
+    border-radius: 25px;
+
+}
+
+.head {
+    width: 100%;
+    text-align: center;
+    color: rgb(141, 204, 255);
+}
+
+.title {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    text-align: start;
+}
+
+.wrapper {
+
+    background-color: #282c34;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding-left: 30px;
+}
+
+.colorGreen {
+    color: lime
+}

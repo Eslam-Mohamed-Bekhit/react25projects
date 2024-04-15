@@ -1,0 +1,26 @@
+:root {
+    --background-color: #000;
+    --text-primary: #fff;
+
+}
+
+[data-mode="dark"] {
+    --background-color: #fff;
+    --text-primary: #000;
+}
+
+.button-light-dark {
+    color: var(--text-primary);
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 100vh;
+    transition: all 0.5s ease-in-out
+}
+
+.button-light-dark button {
+    background-color: var(--text-primary);
+    color: var(--background-color);
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+
+}

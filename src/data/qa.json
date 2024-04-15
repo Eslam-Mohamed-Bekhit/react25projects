@@ -1,0 +1,1220 @@
+[
+    {
+        "id": 1,
+        "question": "what is react ?",
+        "answer": " React is a declarative JavaScript library that lets us create web app frontends with a component-based development pattern",
+        "category": "react"
+    },
+    {
+        "id": 2,
+        "question": "what is components in react ?",
+        "answer": " Components are independent and reusable bits of code. ",
+        "category": "react"
+    },
+    {
+        "id": 3,
+        "question": "what is babel ?",
+        "answer": " Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.",
+        "category": "react"
+    },
+    {
+        "id": 4,
+        "question": "What is the use of React virtual DOM? ",
+        "answer": "This approach to perform updates to the UI without affecting the rest of the page leading to improved performance and a smoother user experience virtual DOM acts as an intermediate between the actual DOM and the React components allowing React to make updates to the DOM efficiently",
+        "category": "react"
+    },
+    {
+        "id": 5,
+        "question": "what is create-react-app? and how run it in node terminal",
+        "answer": "a comfortable environment for learning React and is the best way to start building a new single-page application in React you can run 'npx create-react-app' ",
+        "category": "react"
+    },
+    {
+        "id": 6,
+        "question": "how to open curren folder on VScose ?",
+        "answer": "right click to open powerShell then type .code",
+        "category": "react"
+    },
+    {
+        "id": 7,
+        "question": "what is Styled-components",
+        "answer": "a library that allows you to write CSS in JS while building custom components in Reactjs ",
+        "category": "react"
+    },
+    {
+        "id": 8,
+        "question": "how you can write styled-components?",
+        "answer": "import styled from styled-components in js file and export NameClass = styled.div`property:value, &hover:{property:value}&hover > div :{color: ${props.first === 1 ? 'red' : 'white'} `  Import {constNames,  .. } from 'file.js'",
+        "category": "react"
+    },
+    {
+        "id": 9,
+        "question": "explain Ways to Import Images in React => directly , SVG , Public , require , Externally ?  ",
+        "answer": " import it directly :: import myImage from './path_to_your_image.png'  , SVG Image :: import { ReactComponent as MyLogo } from './my_logo.svg'  ,   <img src={'/public/path_to_your_image.png'}  />  ,  from the Public :: <img src={process.env.PUBLIC_URL + '/image.jpg'} />  ,   require() :: <img src={require(\\'./yourimage.png')}  />  ,  Externally Hosted Image :: const imageUrl = 'https://example.com/path_to_your_image.png' <img src={imageUrl} /> ",
+        "category": "react"
+    },
+    {
+        "id": 10,
+        "question": " how to Import Images in styled component ? ",
+        "answer": "backGround : import myImage from '../../assets/image.png';const HeaderImage = styled.div`  background-image: url(${myImage});`  ,  image : const Logo = styled.img` width: 30px;    height: 30px; margin: 15px; ` <Logo src={LogoSrc} /> ",
+        "category": "react"
+    },
+    {
+        "id": 11,
+        "question": "how to import json file? ",
+        "answer": "import Profile from './components/profile'; ",
+        "category": "react"
+    },
+    {
+        "id": 12,
+        "question": "how to import big json file ",
+        "answer": "in useEffect or componentDidMount  let config = null const com = () => {useEffect(() => { config = require('./config.json')   },  []) ",
+        "category": "react"
+    },
+    {
+        "id": 13,
+        "question": " how to set script to up your code for githup pages?",
+        "answer": "npm i gh-pages --save  , in json file  : \n“homepage” : https://<username>.github.io/<repositoryName>/} “scripts” : { “predeploy” : “npm run build” ,  ”deploy”:  “gh-pages -D predeploy” } , in Terminal : git init git add . git commit –m “..”  git remote add origin https://github.com/<username>/<repositoryName> '' git push –u origin master , Npm run deploy ,  Open in browser https://<username>.github.io/<repositoryName>/  ",
+        "category": "react"
+    },
+    {
+        "id": 14,
+        "question": "Input in jsx ? ",
+        "answer": " <input   /> ",
+        "category": "react"
+    },
+    {
+        "id": 15,
+        "question": "submit Input in jsx ?",
+        "answer": " <input type = submit  value =  />  ",
+        "category": "react"
+    },
+    {
+        "id": 16,
+        "question": " how to write X and space in html code symbol? ",
+        "answer": " &times; &nbsp; ",
+        "category": "react"
+    },
+    {
+        "id": 17,
+        "question": "how to write function name in onClick or onChange  ?",
+        "answer": " onClick = {constName}  , onClick = {(e)=>constName(e)}  ",
+        "category": "react"
+    },
+    {
+        "id": 18,
+        "question": "how to use filter method to delete from state array ,2 way by id?",
+        "answer": "  copystate.splice(copystate.findIndex( el => el.id === id, 1) , copystate.filter(el=>el.id != id) setState(copystate) ",
+        "category": "react"
+    },
+    {
+        "id": 19,
+        "question": "if you have state object you need update the values independ on their keys with onChange function for every input  ,  write function",
+        "answer": "use computed property : handleChange = (e)=> setState([e.target.id] : e.target.value)  <input id=name|age  onChange={handelChange} />",
+        "category": "react"
+    },
+    {
+        "id": 20,
+        "question": " how to use Viewport Sized Typography for responsive font size?",
+        "answer": "  font-size: calc(10px + 2vmin); 1vw = 1% of viewport width , 1vh = 1% of viewport height , 1vmin = 1vw or 1vh  whichever is smaller , 1vmax = 1vw or 1vh whichever is larger ",
+        "category": "react"
+    },
+    {
+        "id": 21,
+        "question": "how to map on Data ?",
+        "answer": "data.map((el, index)=><>{el}</> ",
+        "category": "react"
+    },
+    {
+        "id": 22,
+        "question": "howt to set condition in jsx?",
+        "answer": " isTrue && (<> </>)  ,  isTrue? () : null  ,  isTrue?():()  ,  isTrue?():isTrue?():()",
+        "category": "react"
+    },
+    {
+        "id": 23,
+        "question": "how to push value to state array of IDs if it not exist by id if exist delete it?",
+        "answer": "copyState = state  , index = copyState.indexOf(id)  , if(index===-1)copyState.push(id) else copyState.splice(index, 1)  ,  setState(copyState)",
+        "category": "react"
+    },
+    {
+        "id": 24,
+        "question": "how to opposite condution for bolean  isOk === 1 ? good : not  ?",
+        "answer": " !(isOk === 1) ? good : not  ",
+        "category": "react"
+    },
+    {
+        "id": 25,
+        "question": "how to setstate to opposite state bolean ?  ",
+        "answer": "  setStateName(!stateName) ",
+        "category": "react"
+    },
+    {
+        "id": 26,
+        "question": " how to make random function ?",
+        "answer": " (length)=>Math.floor(Math.random() * length) ",
+        "category": "react"
+    },
+    {
+        "id": 27,
+        "question": " how to write hexa color and what is number and alphaptic use ",
+        "answer": "  #123456  #123  0123456789abcdef",
+        "category": "react"
+    },
+    {
+        "id": 28,
+        "question": " how to loop to make random number  ",
+        "answer": "  (length) => {let result='' ;  const string = 0123456789abcdef ;  for(let i  = 0 ; i < length; i++ ){  resutl += string[randomFunc(string.length)] }} ",
+        "category": "react"
+    },
+    {
+        "id": 29,
+        "question": "  how to write rgb color and rgba (red green blue alpha)",
+        "answer": "  rgb(256,256,256)  rgba(256,256,256,1)  ",
+        "category": "react"
+    },
+    {
+        "id": 30,
+        "question": "  how to add 2 condution on if shorhand",
+        "answer": " s>m || s<r ? .. : ..   (1>2 || 2<2) && (m>s && h>b) ? .. : .. ",
+        "category": "react"
+    },
+    {
+        "id": 31,
+        "question": " how to add more if short hand in the same one  ",
+        "answer": "  ..  ?  _?_:_  :  -?-:-  ",
+        "category": "react"
+    },
+    {
+        "id": 32,
+        "question": " event hover and click and enter ",
+        "answer": " onClick onMouseMove onMouseLeave      ",
+        "category": "react"
+    },
+    {
+        "id": 33,
+        "question": " how to use fetch async try cathc with pending data error stats ",
+        "answer": " const fetchData = async(url)=>{ try{ setPending(true); const res = await fetch(url); data = res.json() ;data && data.length>0 ? setData(data) : setError('no data') ; setPending(false) } catch(e){setError(e.message; setPending(false) }} ",
+        "category": "react"
+    },
+    {
+        "id": 34,
+        "question": " what is name of arrow left and right in react icons ?",
+        "answer": " BsArrow Left|Right CircleFill  ",
+        "category": "react"
+    },
+    {
+        "id": 35,
+        "question": "picture api for testing wep name and another for json array of object ?",
+        "answer": "picsum , dummyjson",
+        "category": "react"
+    },
+    {
+        "id": 36,
+        "question": "how to use callback in set state ? ",
+        "answer": " setStateName( (prevState)=> [...prevState,...newRecord] )",
+        "category": "react"
+    },
+    {
+        "id": 37,
+        "question": "  how you can check state before you make button disable ?",
+        "answer": " useEffect( (stateToCheck && )=> if( )setDisable(true) ,[stateToCheck])  ",
+        "category": "react"
+    },
+    {
+        "id": 38,
+        "question": " how to use Recursion in react components ? ",
+        "answer": " parent = ({childData})=>{ <child data=childData>}  child= ({data})=>{ use childData , if childData.child && <parent childData=childData>> }",
+        "category": "react"
+    },
+    {
+        "id": 39,
+        "question": " how to check if key with bolean value exist and add key and bolean value to object  when you recive string of key to check and add ,if exist change the value ",
+        "answer": " (stringKey)=> setObjectState({...objectState ,[stringKey] : !objectState[stringKey])",
+        "category": "react"
+    },
+    {
+        "id": 40,
+        "question": " QR library name for react ? ",
+        "answer": "  react-qr-code ",
+        "category": "react"
+    },
+    {
+        "id": 42,
+        "question": " how to create useLocalStorage hook ? ",
+        "answer": " (k,v)=>{const [val,setVal]=useState(()=>{let c ; try{c = JSON.parse(localStorage.getItem(k)) || v }catch(e){c=v} return c }  )}     useEffect( ()=>localStorage.setItem(k,JSON.stringify(v) ) ,[value,key])  return(val,setval)",
+        "category": "react"
+    },
+    {
+        "id": 43,
+        "question": " how to insatll tailwindcss ?",
+        "answer": " npm i -D tailwindcss , npx tailwindcss init , edit config.js object add content:['./src/**/*.{js,jsx,ts,tsx}']  ,  index.css @tailwind base @tailwind components @tailwind utilities ",
+        "category": "react"
+    },
+    {
+        "id": 44,
+        "question": "  how to use react-router-dom ?",
+        "answer": " index.js <BrouserRouter> <App /> <BrouserRouter>  , app.js : <Routes> <Route exact path='/' element={<Home/:id />} /> </Routes> , <NavLink to='/'> </NavLink> <Link to='/'> </Link>",
+        "category": "react"
+    },
+    {
+        "id": 45,
+        "question": "how to create context?",
+        "answer": "import createContext from react , export const myContext = createContext(null)  , export default const contextProvider = ()=>{ return <myContext.Provider value={...} > {children} </myContext.Provider> , const {...} = useContext(myContext) ",
+        "category": "react"
+    },
+    {
+        "id": 46,
+        "question": "how use useParams and useNavigate in react router dom ? ",
+        "answer": " import {useParams ,useNavigate }from react-router-dom , const {id} = useParams() , const navigate = useNavigate() navigate('/')",
+        "category": "react"
+    },
+    {
+        "id": 47,
+        "question": "how to redux toolkit?  ",
+        "answer": "  in app : import {Provider} from 'react-redux' import store from './storepath  <Provider store= {store} > <App /> </Provider> , in slice.js import {createSlice} from '@reduxjs/toolkit' const sliceName = creatSlice({ name:.. ,initialState:..,reducers:{methodname(state,action){state.value += action.payload} || methodName:(state,action)=>{}}) , export const{methodName} = sliceName.actions export default sliceName.reducer ",
+        "category": "react"
+    },
+    {
+        "id": 48,
+        "question": " how to use reducer to discpatch actions and get state from redux toolkit ? ",
+        "answer": " import {useDispatch,useSelector} from react-redux  import {..actions} from slice.js , const mystate = useSelector(state=>state) const dispatch = useDispach() const handleAction =()=>dispatch(action())  ",
+        "category": "react"
+    },
+    {
+        "id": 49,
+        "question": " how to install chakra and react apexcharts? ",
+        "answer": " npm i @chakra-ui/react @emotion-react @emotion-styled framer-motion react-apex-chart",
+        "category": "chakra"
+    },
+    {
+        "id": 50,
+        "question": "how to control color mode in Chakra?  ",
+        "answer": "import { extendTheme } from '@chakra-ui/react'; ,  const config = {initialColorMode : 'light' ,useSystemColorMode:true } , export default const theme = extendTheme({config})  , in index.js import {ChakraProvider} from '@chakra-ui/react , <ChakraProvider theme={theme} > <app /> </ChakraProvider> ",
+        "category": "chakra"
+    },
+    {
+        "id": 51,
+        "question": " how to add response values for property in Chakra?  ",
+        "answer": " property={[base,sm,md,lg,xl,2xl]} display={[ none,none,block,block,block ]} ",
+        "category": "chakra"
+    },
+    {
+        "id": 52,
+        "question": " how to type colors on chackra ",
+        "answer": "colorname.alpha 50 to 900 ex, red.500",
+        "category": "chakra"
+    },
+    {
+        "id": 53,
+        "question": " what is box in chakra? ",
+        "answer": " is div with as property  <Box as=span > ",
+        "category": "chakra"
+    },
+    {
+        "id": 54,
+        "question": " how to control disabled value for Button in react ? ",
+        "answer": " <button disabled ={boleanState}  > ",
+        "category": "react"
+    },
+    {
+        "id": 55,
+        "question": " Textarea ?",
+        "answer": " 'cols' and 'rows' values with numbers ",
+        "category": "react"
+    },
+    {
+        "id": 56,
+        "question": " how to determine the max lines to appear ",
+        "answer": "  noOfLines={1} ",
+        "category": "chakra"
+    },
+    {
+        "id": 57,
+        "question": " what is heading in Chakra?",
+        "answer": " is default H2 element with as property to change to h* ",
+        "category": "chakra"
+    },
+    {
+        "id": 58,
+        "question": " what is Flex property ? ",
+        "answer": " it is div with display flex , with shorthand to flexpropery , ex flexDirection shor to direction alignItem be align ",
+        "category": "chakra"
+    },
+    {
+        "id": 59,
+        "question": " what is Spacer in Chakra ? ",
+        "answer": " alternative stack for responsive , <Flex> <Box> ...</Box> </Spacer> <Box>.. </Box> ",
+        "category": "chakra"
+    },
+    {
+        "id": 60,
+        "question": "what is Center,Squere,Circle in Chakra?  ",
+        "answer": " Center is center his child , squere take size for height and width , circle is round squere  ",
+        "category": "chakra"
+    },
+    {
+        "id": 61,
+        "question": "defferent of Flex+Spacer and Grid , HStack ?  ",
+        "answer": " flex+spacer full width with equal spacing , Grid+gapProperty fullwidth not equal gaps , HStack+spacingPrperty not full width but equal spcing ",
+        "category": "chakra"
+    },
+    {
+        "id": 62,
+        "question": "what is Container in Chakra?  ",
+        "answer": " use it to set maxWidth for the content use MaxW={md<28rem>|sm<24rem>|550px || container.sm|md|lg|xl} to costum the width  ",
+        "category": "chakra"
+    },
+    {
+        "id": 63,
+        "question": " how to center the content in the container ",
+        "answer": "  add centerContent its bolean property for Container  ",
+        "category": "chakra"
+    },
+    {
+        "id": 64,
+        "question": " size and space ? ",
+        "answer": " space  1 = .25rem = 4px  size ( max min xs sm md lg xl 2xl ...",
+        "category": "chakra"
+    },
+    {
+        "id": 65,
+        "question": "what it Text in Chackra  ",
+        "answer": "is p element fontSize default md 1rem 16px <Text  fontSize={..} as=b|i|u|mark|abbr|cite|em|del|kbd|s|sub|sup>  ",
+        "category": "chakra"
+    },
+    {
+        "id": 66,
+        "question": " how to use Button and ButtonGroup in Chackra",
+        "answer": " <ButtonGroup isAttached variant={..} space='6'><Button colorSchema='..' size=xs|sm|md|lg varient=solid|outline|gost or link>..</Button></ButtonGroup> ",
+        "category": "chakra"
+    },
+    {
+        "id": 67,
+        "question": "what is the colorShema vaiable ? ",
+        "answer": " white|blackAlpha gray rgb pink purple teal cy o y , facebook messenger whatsapp telegram twitter linkedin ",
+        "category": "chakra"
+    },
+    {
+        "id": 68,
+        "question": " wrap, wrapitem explian them",
+        "answer": " wrap is ul with flex and flex wrap , wrapitem is li with flex and flex-start",
+        "category": "chakra"
+    },
+    {
+        "id": 69,
+        "question": " how add icon to button?",
+        "answer": " <button right|leftIcon=<IconName />  ",
+        "category": "chakra"
+    },
+    {
+        "id": 70,
+        "question": "how to add load snipper to button and another content with spinner while still loading and how to make snipper in the end? ",
+        "answer": "<Button isLoading loadingText='' snipperPlacement='end'   ",
+        "category": "chakra"
+    },
+    {
+        "id": 71,
+        "question": "how add icons as button and make it attached with button ",
+        "answer": "  <ButtonGroup attached> <button>...</button> <iconButton icon=<iconeName> /> </ButtonGroup> ",
+        "category": "chakra"
+    },
+    {
+        "id": 72,
+        "question": " how to make refrence for element in jsx ? ",
+        "answer": " const ref1 = useRef(null)  <el ref={ref1} >",
+        "category": "chakra"
+    },
+    {
+        "id": 73,
+        "question": " input in Chakra ? ",
+        "answer": " <input variant='outline|filled|unstyled|flushed ",
+        "category": "chakra"
+    },
+    {
+        "id": 74,
+        "question": " how to use inputgroup and inputaddon to add elements beside the input?",
+        "answer": " <inputGroup > <inputLeftAddon>...</inputLeftAddon><input/><inputRightAddon>...</inputRightAddon> </inputGroup>  ",
+        "category": "chakra"
+    },
+    {
+        "id": 75,
+        "question": " how to add elements inside the input and control clicked it?  ",
+        "answer": " <inputGroup > <inputLeftElement pointerEvnets='none'>...<inputLeftElement> <input/> <inputRightElement> ...</inputRightElement> </inputGroup>    ",
+        "category": "chakra"
+    },
+    {
+        "id": 76,
+        "question": " how control input size height ? ",
+        "answer": " size={'xs|sm|md|lg} ",
+        "category": "chakra"
+    },
+    {
+        "id": 77,
+        "question": " how to control value valid focus placehoder  ",
+        "answer": "<Input value={valuState} onChange=(e)=>setValue(e.target.value) isValid errorBorderColor='' focusBorderColor='' _placeholder={{color:'inherit',opacity:0.5}}   ",
+        "category": "chakra"
+    },
+    {
+        "id": 78,
+        "question": " input date?",
+        "answer": " <input type='datetime-local' ",
+        "category": "chakra"
+    },
+    {
+        "id": 79,
+        "question": "how to use radio ? ",
+        "answer": " state value , radiogroup value = value onChange={setValue} > stack[direction=row]> Radio[value=n]*3 ",
+        "category": "chakra"
+    },
+    {
+        "id": 80,
+        "question": "radio sizes ,defaultCheck,defaultValue,isDisabled,alignment,isInvalid",
+        "answer": " <RadioGroup name='' defaultVallue=''> <stack direction='row'> <radio size=sm|md|lg defaultChecked isDisabled inInvalid >",
+        "category": "chakra"
+    },
+    {
+        "id": 81,
+        "question": " how to use react-apexchart?",
+        "answer": " <Chart option={}  series={[value1,value2]}  type='pie' width=.. height=''/> ",
+        "category": "apexchart"
+    },
+    {
+        "id": 82,
+        "question": " how to write option for Chart?",
+        "answer": " {lables=[],colors:[],states{},legend:{},dataLabels:{},hover:{},plotOptions:{},fill:{},tooltip:{}} ",
+        "category": "apexchart"
+    },
+    {
+        "id": 83,
+        "question": "how to create json file for server ",
+        "answer": " npm init ./ ",
+        "category": "express"
+    },
+    {
+        "id": 84,
+        "question": "what packages you need to run dev server with mongoo DB? ",
+        "answer": "  cors express nodemon mongoose ",
+        "category": "express"
+    },
+    {
+        "id": 85,
+        "question": " how to run server",
+        "answer": "  app=express() app.use(cors()) app.use(express.json()) app.use('./',(req,res)=>res.send('..'))  app.listen(port,()=>{})",
+        "category": "express"
+    },
+    {
+        "id": 86,
+        "question": "how you can connect your DB?  ",
+        "answer": "in database folder index.js : mongoose.connect(url).then().catch() , in server index.js require('./database path') ",
+        "category": "express"
+    },
+    {
+        "id": 87,
+        "question": " how to get cluster link from your mongoo cluster? ",
+        "answer": " in connect for vscode ",
+        "category": "express"
+    },
+    {
+        "id": 88,
+        "question": "how to create schema and model   ",
+        "answer": " const Schema = mongoose.Schema() , const shemaname = new Schema({key:{type:String|Number|Date , default:Date.now}) , module.exports = mongoose.model('ModleName',Schemaname)",
+        "category": "express"
+    },
+    {
+        "id": 89,
+        "question": " how to read data from model in mongo and respond it in json file  ",
+        "answer": "async (req,res)=> try{data =await modelName.find()}catch(e){}; if(data)res.status(200).json({data})",
+        "category": "express"
+    },
+    {
+        "id": 90,
+        "question": " how to add new data for model",
+        "answer": " const newData = new Mode({..})   await newData.save()  ",
+        "category": "express"
+    },
+    {
+        "id": 91,
+        "question": "  how to add new data for model with session ",
+        "answer": "  const  session = await mongoose.startSession() ;  , mongoose.startTransaction(session)  , await newData.save() , mongoose.endransaction(session) ",
+        "category": "express"
+    },
+    {
+        "id": 92,
+        "question": " how to delet and updata model ",
+        "answer": " modle.foundByIdAndDelete(id) findByIdAndUpdate(id,{}) ",
+        "category": "express"
+    },
+    {
+        "id": 93,
+        "question": " how to create routers to use controller as response middleware ",
+        "answer": "const routeName = express.Router()  routeName.get|post|put|delete('./path',controllerMethod)  module.exports=routeName",
+        "category": "express"
+    },
+    {
+        "id": 94,
+        "question": "how to use this route in the app? ",
+        "answer": " in server index.js import routeName from'./pathfile'  app.use('path',routeName) ",
+        "category": "express"
+    },
+    {
+        "id": 95,
+        "question": " how to use react router dom in frontend ",
+        "answer": " <BroweserRouter> app </BroweserRouter>  in app.jsx  <Routes> <Route exact path='./' element={<ComponentName />} ",
+        "category": "express"
+    },
+    {
+        "id": 96,
+        "question": "what is SAAS ",
+        "answer": " sofware as a service, end product or applications not for developers but for users to consumer applications(youtube maps face) , accessible useing wep and mobile app , scalable secure available",
+        "category": "cloud services"
+    },
+    {
+        "id": 97,
+        "question": " how to create SAAS before cloud services appeargive examble ",
+        "answer": " like ober,  you need to have : Clients(web|mobile app), api,appliection(servers,microservices), database(key value stystem -Amazon DynamoDB-ScyllaDB-Google Cloud Memorystore-Redis-Redis Enterprise-Azure Table Storage-Oracle NoSQL Database Cloud, data warehouse-Amazon Redshift -Google BigQuery- IBM Db2 Warehouse -Azure Synapse Analytics) , code deplyment( make edit code deploy and run on the production) , ssl certifcate , dns domain name , firewall vpc( Virtual Private Cloud) , load Balancing(distributing traffic among multiple servers ) , operating system , virtualization machines , hardware:computers-storage-memory-networking ",
+        "category": "cloud services"
+    },
+    {
+        "id": 98,
+        "question": " what is IAAS  ",
+        "answer": " infrastracture as a services",
+        "category": "cloud services"
+    },
+    {
+        "id": 99,
+        "question": " how to create IAAS to sell this services? ",
+        "answer": "hardware(limit disc, disk as service by GB, networking pay by ingress-egress - load balancing) virtuaization(vm with more cores or less cores ,dedicate or shared,) operating system ",
+        "category": "cloud services"
+    },
+    {
+        "id": 100,
+        "question": "  what is PAAS ",
+        "answer": " platform as a service",
+        "category": "cloud services"
+    },
+    {
+        "id": 101,
+        "question": " what common pieces in Pass for appllication ",
+        "answer": " provision server ,add load balancing,add ssl ,build from repo and deploy the code ",
+        "category": "cloud services"
+    },
+    {
+        "id": 102,
+        "question": " other Pass ex",
+        "answer": " database,machine learning,sms(TWILL),security",
+        "category": "cloud services"
+    },
+    {
+        "id": 103,
+        "question": " how to console warn",
+        "answer": " console.warn()",
+        "category": "devTools"
+    },
+    {
+        "id": 104,
+        "question": " how to console error",
+        "answer": "console.erros ",
+        "category": "devTools"
+    },
+    {
+        "id": 105,
+        "question": "how to console table ",
+        "answer": " console.tabel([{k:v},{k:v}])",
+        "category": "devTools"
+    },
+    {
+        "id": 106,
+        "question": "how to add style for console ",
+        "answer": " console.log(%c....,'font-size:50px')",
+        "category": "devTools"
+    },
+    {
+        "id": 107,
+        "question": "how to add just digit or string for console ",
+        "answer": "console.log('%s|%d','jks'|123) ",
+        "category": "devTools"
+    },
+    {
+        "id": 108,
+        "question": " how to use console.debug('....')",
+        "answer": " set verbose in console to true to see them in the console ",
+        "category": "devTools"
+    },
+    {
+        "id": 109,
+        "question": " how you can  debug and modify the code in the run time? ",
+        "answer": " make break boint and change values then run again the code",
+        "category": "devTools"
+    },
+    {
+        "id": 110,
+        "question": " how make breakpoint in source pages in devtools? ",
+        "answer": " just click on the point you want stop at it ",
+        "category": "devTools"
+    },
+    {
+        "id": 111,
+        "question": " how make breakpoint in your code ?",
+        "answer": "use debugger keyword in the line you want stop execution ",
+        "category": "devTools"
+    },
+    {
+        "id": 112,
+        "question": "how to make breakpoint when fetch/xhr data  ? ",
+        "answer": " in source go to XHR/fetch and add new breakpoint by type word that url XHR request contain it ",
+        "category": "devTools"
+    },
+    {
+        "id": 113,
+        "question": "how to make breakpoint when fire events? ",
+        "answer": " source event listener breakpoint and choose event",
+        "category": "devTools"
+    },
+    {
+        "id": 114,
+        "question": " how to go step line by step line inside your function breakpoint?",
+        "answer": "use arrow 'step over next' in source ",
+        "category": "devTools"
+    },
+    {
+        "id": 115,
+        "question": " if your break point in the function and it call another function how you can step by step without step over and call it ?",
+        "answer": " dont use 'step over next' and use 'step into next function ",
+        "category": "devTools"
+    },
+    {
+        "id": 116,
+        "question": "how to pause your code when error exception threw? ",
+        "answer": " click on pause on exception in source panel",
+        "category": "devTools"
+    },
+    {
+        "id": 117,
+        "question": " if you threw the exeption in try block how can pause when threw exception",
+        "answer": " mark on pause on caught exceptions",
+        "category": "devTools"
+    },
+    {
+        "id": 118,
+        "question": "how to deactive your breakpoints  ",
+        "answer": " press deactivate break points ",
+        "category": "devTools"
+    },
+    {
+        "id": 119,
+        "question": "what is call stack in the source panel? ",
+        "answer": " call stack is data structure , if you have function call other function and stack have them all and thier variable scopes you can move between them to debug ",
+        "category": "devTools"
+    },
+    {
+        "id": 120,
+        "question": " how to edit js filesystem code in the run time ",
+        "answer": " in source type on js file and ctr s to save it",
+        "category": "devTools"
+    },
+    {
+        "id": 121,
+        "question": " how to open snippets if you have more of them to run it fast ",
+        "answer": "on devTools  ctr+p ! choose it to run",
+        "category": "devTools"
+    },
+    {
+        "id": 122,
+        "question": "how to stop render requests in network panel and how to resume them?  ",
+        "answer": "with record button",
+        "category": "devTools"
+    },
+    {
+        "id": 123,
+        "question": "  ",
+        "answer": "",
+        "category": "devTools"
+    },
+    {
+        "id": 124,
+        "question": "how to test your wep app on slow 3g network",
+        "answer": "devtools >network>onlilne>3g",
+        "category": "devTools"
+    },
+    {
+        "id": 125,
+        "question": "how to copy request and run it in the console",
+        "answer": "right click on the request",
+        "category": "devTools"
+    },
+    {
+        "id": 126,
+        "question": " how to see PageSource",
+        "answer": "elements click right page source || ctr u  || click right on the page",
+        "category": "devTools"
+    },
+    {
+        "id": 127,
+        "question": "how to can select elements on page to focus on elemment panel",
+        "answer": "right click on the element choose inspect , choose tool 'select element inspect' in the right or by inspect panel ctrl+shift+c , in bottom search box use text or css slector .classname #idname",
+        "category": "devTools"
+    },
+    {
+        "id": 128,
+        "question": "how to console the element you focus ?",
+        "answer": " $0",
+        "category": "devTools"
+    },
+    {
+        "id": 129,
+        "question": "how to add your files map with chrom to save edit direct for your real files?",
+        "answer": "devtools > sources panel> source>  , paste your files project , right click in any file on localserver and map it with your real filr ",
+        "category": "devTools"
+    },
+    {
+        "id": 130,
+        "question": "what package you need to ignore style in react server side",
+        "answer": "ignore-styles",
+        "category": "rss"
+    },
+    {
+        "id": 131,
+        "question": "what packages you need to register Babell",
+        "answer": "@babel/register @babel/preset-env @babel/preset-react",
+        "category": "rss"
+    },
+    {
+        "id": 132,
+        "question": "how to use babel and how to make it ignore node module files",
+        "answer": "in folder server index.js :require(@babel/resgister)({ignore:[/(node_modules)/]  ,presets=['@babel/presets-env','@babel/presets-react]}) require('./server.js'|'./server')",
+        "category": "rss"
+    },
+    {
+        "id": 133,
+        "question": "how to create server ?",
+        "answer": "in server.js import express , app = express() , app.use(corss()) app.use(express.json()) , app.use(express.static(path.resolve(--dirname,'..','build)) app.use(path,(req,res)=>res.send(..) ) , app.listen(port,()=>)  ",
+        "category": "rss"
+    },
+    {
+        "id": 134,
+        "question": "how to read file and check if err and target the router react component and convert it to html and replace part of data file with this html in res",
+        "answer": "app.use('^/$' ,(req,res)=> { fs.readFile(path.resolve(...) , utf-8, (err,data)=>{if(err)return res.status(500).send('..')} const html = ReactDOMServer.renderToString(<StaticRouter location={req.url}><App /></StaticRouter>) ; return res.send(Data.replace('<div id=root><div>', `<div id=root> ${html} <div>` )   })",
+        "category": "rss"
+    },
+    {
+        "id": 135,
+        "question": "how to solve static files js Chuncs",
+        "answer": "res.use(express.static(path.resolve(--dirname,'..' ,'build') ))",
+        "category": "rss"
+    },
+    {
+        "id": 136,
+        "question": "what must be edit in app.jsx in client side ?",
+        "answer": "ReactDOM.render to ReactDOM.hydrate",
+        "category": "rss"
+    },
+    {
+        "id": 137,
+        "question": "differnt between render and hydrate",
+        "answer": "render will render every thing, hydrate will use all node from backend and attaches with listeners from react on existance Dom node",
+        "category": "rss"
+    },
+    {
+        "id": 138,
+        "question": "how you ignore styles",
+        "answer": "require('ignore-styles) in server index.js",
+        "category": "rss"
+    },
+    {
+        "id": 139,
+        "question": "how to make repo and clone it locally",
+        "answer": "create Ribo on git hu and copy https link and in your terminal git clone ..httpsUlr ",
+        "category": "fullStack"
+    },
+    {
+        "id": 140,
+        "question": "how to create packageJson with default config",
+        "answer": "npm init -y",
+        "category": "fullStack"
+    },
+    {
+        "id": 141,
+        "question": "how to add Ts localy in your app in dev-dependencies",
+        "answer": "if it not install in your OS , npm i --dev typescript",
+        "category": "fullStack"
+    },
+    {
+        "id": 142,
+        "question": "how to init tsc in the app",
+        "answer": "it terminal : ./node-modules/.bin/tsc --init",
+        "category": "fullStack"
+    },
+    {
+        "id": 143,
+        "question": "what you need to edit in tsconfig file",
+        "answer": "target es2016 ,module commonjs ,rootdir ./src ,outdir dist ,",
+        "category": "fullStack"
+    },
+    {
+        "id": 144,
+        "question": "how to run ts file",
+        "answer": "node src/filename.ts",
+        "category": "fullStack"
+    },
+    {
+        "id": 145,
+        "question": "how to compile ts file",
+        "answer": "./node-module/.bin/tsc",
+        "category": "fullStack"
+    },
+    {
+        "id": 146,
+        "question": "how to install nodemon in node ts app",
+        "answer": "npm i nodemon ts-node",
+        "category": "fullStack"
+    },
+    {
+        "id": 147,
+        "question": "how to make script name is dev to use nodemon in devmode",
+        "answer": "scripts :{'dev':'nodemon src/index.ts'}",
+        "category": "fullStack"
+    },
+    {
+        "id": 148,
+        "question": "how to create script to compile and use it to make another script to compile and run node in production",
+        "answer": "build:tsc  start:npm run build && node dist/index.js",
+        "category": "fullStack"
+    },
+    {
+        "id": 149,
+        "question": "how to use prettier",
+        "answer": "npm i --dev prettier , touch .prettierrc.json {'singleQuote': true, 'braketSpacint':true} , install plugin prettier in VSC , in setting check format on save , in package.json in scripte format:prettier --write src/**/*.ts",
+        "category": "fullStack"
+    },
+    {
+        "id": 150,
+        "question": "how to use eslint",
+        "answer": "npm i --dev eslint   npx eslint --init  choose(problem esm none node browser javascript )",
+        "category": "fullStack"
+    },
+    {
+        "id": 151,
+        "question": "in eslintrc.js config to add rules what values 0-1-2 mean",
+        "answer": "0 none 1 warn 2 error",
+        "category": "fullStack"
+    },
+    {
+        "id": 152,
+        "question": "how to add scritp for eslint in json package",
+        "answer": "lint: eslint src/**/*.ts , lint-fix:eslint src/**/*.ts --fix",
+        "category": "fullStack"
+    },
+    {
+        "id": 153,
+        "question": "how to config prettier with eslint",
+        "answer": "npm i --dev eslint-config-prettier eslint-plugin-prettier   , in .eslintrc.js add prettier to plugins and extends , in rules 'prettier/prettier' :2",
+        "category": "fullStack"
+    },
+    {
+        "id": 154,
+        "question": " how to install express and what types in express your need it ",
+        "answer": " npm i express npm i --dev @types/express  import express,{Application,Response,Request,NextFunction}",
+        "category": "fullStack"
+    },
+    {
+        "id": 155,
+        "question": "what you can use to make test requests",
+        "answer": "postman external thunder-client on vsc  httpie on OS terminal",
+        "category": "fullStack"
+    },
+    {
+        "id": 156,
+        "question": "how to response with json",
+        "answer": "res.josn({})",
+        "category": "fullStack"
+    },
+    {
+        "id": 157,
+        "question": "how to install jamsmine",
+        "answer": "npm i jasmine @types/jasmine npx jasmine init  , in jasmine.json spec_dir : 'dist' env:{random:false} to respect order code in jsamine test files",
+        "category": "fullStack"
+    },
+    {
+        "id": 158,
+        "question": "which package you need to make http request on your server in test mode",
+        "answer": "npm i --dev supertest @types/spertest import app from server/index.js request = supertest(app) res = reguest.get|post...(path,)",
+        "category": "fullStack"
+    },
+    {
+        "id": 159,
+        "question": "how to make script to run the test",
+        "answer": "  test : tsc && jasmine",
+        "category": "fullStack"
+    },
+    {
+        "id": 160,
+        "question": "how to make function test in jasmine",
+        "answer": "descripe(.. ,()=>{it(.. ,()=>{... expect(..).toBe(..)})})",
+        "category": "fullStack"
+    },
+    {
+        "id": 161,
+        "question": "how to add reporter ",
+        "answer": "npm i --dev jasmine-spec-reporter , make folder helpers in src and add configration jamsine ts code from jasmine web site in reporter.ts file",
+        "category": "fullStack"
+    },
+    {
+        "id": 162,
+        "question": " what middleware you need for logs and for security and for  ",
+        "answer": "app.use(express.json()) morgan app.use(morgan('common'))  helmet app.use(helmet()) express-rate-limit app.use(rateLimit({...}))",
+        "category": "fullStack"
+    },
+    {
+        "id": 163,
+        "question": "how to handle error for page not found ",
+        "answer": " add app.use((req,res)=>{ res.status(401).json({ message:'page not founf'})  })  as last route in server index.js before the lesten method",
+        "category": "fullStack"
+    },
+    {
+        "id": 164,
+        "question": " how to handle any throw error happen in the routes ",
+        "answer": "make error interface  status -> num  stack message name -> str,  make middleware (error,req,res,next)=>{status = error.status || 500 message=error.message||'..' res.status(error.status(status).json({message}))} , import middleware and app.use(errormiddleware) before Page not found handle",
+        "category": "fullStack"
+    },
+    {
+        "id": 165,
+        "question": "how to create env file and use it  ",
+        "answer": "in the root .env add key=value for your variables , npm i dotenv ,  create config.ts file in src and import dotenv  dotenve.config() then make  {PORT} = process.env export default {PPRT , ...} ",
+        "category": "fullStack"
+    },
+    {
+        "id": 166,
+        "question": " how to install postgress in your app",
+        "answer": " npm i pg",
+        "category": "fullStack"
+    },
+    {
+        "id": 167,
+        "question": " how to create table on postgres ",
+        "answer": " ( make sure you install postgres and pgadmin in your system )  in postgress terminal or VSC terminal psql -U postgres create database name_table; ",
+        "category": "fullStack"
+    },
+    {
+        "id": 168,
+        "question": "what is enviroment variables you need to connect db postgress ",
+        "answer": "NODE_ENV = 'dev' POSTGRES_HOST = localhose POSTGRES_DB=name POSTGRES_DB_TEST = name POSTGRES_PORT = 5432 POSTGRES_USER = name POSTGRES_PASSWORD=...",
+        "category": "fullStack"
+    },
+    {
+        "id": 169,
+        "question": " how to make pool instanse file to export it to can connect with database , and how to add listener on error ?",
+        "answer": " import {Pool} from pg  export default const pool = new Pool({host,database,password,port,user}) pool.on('error',(error)=>console.log(error) ",
+        "category": "fullStack"
+    },
+    {
+        "id": 170,
+        "question": "how to test connect to db and select date  ",
+        "answer": "import db from database db.connect().then(client=>{ return client.query('SElECT NOW()').then(res=>{ client.release() console.log(res.rows)})}) ) ",
+        "category": "fullStack"
+    },
+    {
+        "id": 171,
+        "question": " how to make migration for your database ",
+        "answer": " npm i db-migrate db-migrate-pg ,create file database.json , npx db-migrate create users-table --sql-file to create 2 empty files in folder name sql and files name randomnum-users-table-up|down ",
+        "category": "fullStack"
+    },
+    {
+        "id": 172,
+        "question": " how to make database.json not static and make it take info from enviroment variables ?",
+        "answer": "{defaultEnv:{'ENV':'NODE_ENV'} , 'dev':{'driver:'pg' ,database:'POSTGRES_DB',host:.. , port:.., user , pass }, 'tes':{..,database:'POSTGRES_DB_TEST',..} } ",
+        "category": "fullStack"
+    },
+    {
+        "id": 173,
+        "question": " how to create table in pg migrate file",
+        "answer": " CREATE TABLE name(id SERIAL PRIMARY KEY , email|user_name|first_name||password VARCHAR(50||255) NOT NULL|UNIQUE) ,  in package.json scripts 'migration:run' : db-migrate up , npm migration:run",
+        "category": "fullStack"
+    },
+    {
+        "id": 174,
+        "question": "how to make types schema  ",
+        "answer": " folder types users.type.ts  type Users={key?:string|number} export default user",
+        "category": "fullStack"
+    },
+    {
+        "id": 175,
+        "question": " when you use type or interface",
+        "answer": "interface when descripe object , types for every thing else ",
+        "category": "fullStack"
+    },
+    {
+        "id": 176,
+        "question": " how to create model for user",
+        "answer": " foder models user.model.ts import db from database class User{ async create(user:user):Promise{try{connection = await db.connect()  sql='' result = connection.query(sql,[user.val1,user.val2,..])connection.release() return result.rows[0])     }catch(error){ threw new Error(`....${(error as Error).message }`)   }}}",
+        "category": "fullStack"
+    },
+    {
+        "id": 177,
+        "question": " how to write create user query ",
+        "answer": "INSERT INTO users (..,..,..)values($1,..)returning *|email user-name  ",
+        "category": "fullStack"
+    },
+    {
+        "id": 178,
+        "question": " how to build route ",
+        "answer": " folder routes > index.ts + api > routeName.routes.ts*    , in files routeName we import Router from express const routes = Router() routes.get|post|put|delete(path,midleWares,midleware controler) and export default routes , in file index.ts  import routeNames from '' routes.use('path',routueName)  and import it in index server  app.use('/api',routes)",
+        "category": "fullStack"
+    },
+    {
+        "id": 179,
+        "question": " how to make api verstions",
+        "answer": "just control in path app.use(api/v1, routes) to convert to update it apis",
+        "category": "fullStack"
+    },
+    {
+        "id": 180,
+        "question": "how to make controller files ",
+        "answer": "import class model and we make instanse from it to use its method to edit database , import modelName from models  const instanse = new ModelName()  middlewareName = async(re,res,next)=>{try { const result = await instanse.methodName(req.body) res.json({}) } catch(err){next(err)}}",
+        "category": "fullStack"
+    },
+    {
+        "id": 181,
+        "question": " solve SERIAL id not restart to 1 when delete with ALTER SEQUENCE",
+        "answer": " Alter SEQUENCE tablename_id_seq RESTART WITH 1",
+        "category": "fullStack"
+    },
+    {
+        "id": 182,
+        "question": " how to solve SERIAL id problem with use psotgres uuid",
+        "answer": "when you create new record user in migration > sql > users-table-up  , CREATE EXTENTION IF NOT EXIST 'uuid-ossp'; , CREAT TABLE users ( id uuid DEFAULT uuid.generate.v4() PRIMARY KEY, )",
+        "category": "fullStack"
+    },
+    {
+        "id": 183,
+        "question": "write query that select some data for all records from table  or specific with use where",
+        "answer": " SELECT id,emai... FROM tableName WHERE id='..'",
+        "category": "fullStack"
+    },
+    {
+        "id": 184,
+        "question": " whrite query to update the user",
+        "answer": " UPDTAE tablename SET k=$1,.. WHERE id='$6' RETURNING id,username,..;  ",
+        "category": "fullStack"
+    },
+    {
+        "id": 185,
+        "question": " whrite query to delete the user ",
+        "answer": "DELETE FROM tableName WHERE id=$1 RETURNING id,... ;",
+        "category": "fullStack"
+    },
+    {
+        "id": 186,
+        "question": " when you call method in model class with controller middleware how to pass data from params or body",
+        "answer": "await modelNameInstanse.methodname(req.params.id as unknown as string | req.body)",
+        "category": "fullStack"
+    },
+    {
+        "id": 187,
+        "question": " what is the differnse betoween use routes.route('/').get(conroller) and routes.get('/',controller)",
+        "answer": "with routes.route you can make chain or routes : routes.route('/:id').patch(controller.update).delete(controller.update)...",
+        "category": "fullStack"
+    },
+    {
+        "id": 188,
+        "question": " how to add hashing for your passwords",
+        "answer": " npm i bcrypt @types/bcrypt  in .env salt=10 and paper=a ny string  and make function in the model hashpassword = (pass)=>{salt = parseInt(config.salt as string, 10) return bcrypt.hashSync( `${pass}${config.papper}`, salt)} ",
+        "category": "fullStack"
+    },
+    {
+        "id": 189,
+        "question": " JWT contain from 3 sections ",
+        "answer": " header payload signature ",
+        "category": "fullStack"
+    },
+    {
+        "id": 190,
+        "question": " how to install jsonwebtoken",
+        "answer": "npm i jsonwebtoken @types/jsonwebtoken",
+        "category": "fullStack"
+    },
+    {
+        "id": 191,
+        "question": " how to handle auth by create method in user model to use bcrypt to compare pass if valid",
+        "answer": "async authenticate(rawpass,email){cl= db.connect() res=cl.query(select pass from table where email=$1,[email]) if(res.rows.length) isuser = bcrypt.compareSync(rawpass+papper,result.rows[0])  if (isuser)  } ",
+        "category": "fullStack"
+    },
+    {
+        "id": 192,
+        "question": " how to handle auth contoller with token ",
+        "answer": " async(req,res,next)=>{const data= modelName.method(req.body.pass,req.body.email) token = jwt.sign({data},config.secret as unknown as string)  if (!data){ return res.status(401).json({statues:'error' message:'..'}) }  return res.status(success).json(data:{...user,token},message:'...') }",
+        "category": "fullStack"
+    },
+    {
+        "id": 193,
+        "question": " how to create middleware to check if requests have same valid token or not ",
+        "answer": " async(req,res)=>{ authHeader = req.get('Authorization') token = authHeader.split(' ')[1]  barear = authHeader.split(' ')[0] } if(barear && token) decode = jwt.verify(token,secret) if (decode) next() else middlewareerror(next) else   middlewareerror(next)  , use it in routes as meddleware befor controller  ",
+        "category": "fullStack"
+    },
+    {
+        "id": 194,
+        "question": " how to create error handle  function when error or not berarea or valid signature or not user data happen",
+        "answer": " const name = (next)=>{error = threw new Error('...') error.status = 401  next(error) } ",
+        "category": "fullStack"
+    },
+    {
+        "id": 195,
+        "question": " how to test server running as unit testing ",
+        "answer": " import app supertest , const request = supertest(app) descripe('',()=>{it('',async()=>{res= await request.get(/) expect(res.status).toBe(200))})}",
+        "category": "fullStack"
+    },
+    {
+        "id": 196,
+        "question": " how to edit packagejson script to prepare unit test independ on test variable on datajson to test unit of database  ? ",
+        "answer": " test : export NODE_ENV=test && tsc && db-migrate-up --env test && tsc && jasmine && db-migrate-reset  , use set insteat export if use windows ,  test:windows : 'set NODE_ENV .....'",
+        "category": "fullStack"
+    },
+    {
+        "id": 197,
+        "question": " how to make unit testing for user model auth method login  ?",
+        "answer": " exist auth method, before all create user  after all delete user test login with correct user and pass expect user data,test to login with invalid data expect null",
+        "category": "fullStack"
+    },
+    {
+        "id": 198,
+        "question": " how to write unit testing ",
+        "answer": " descripe('',()=>{    descripe('',()=>{ it('',()=>{ expect(usermodel.authenticate).toBeDefined()} )})   descripe('',()=>{const user= {...}   beforeAll(async()=> userdata = model.create(user) user.id=userdata.id ) afterAll(connection= dp.connect connection.query( delete from ;\nALTER SEQUENSE users_id_seq RESTART WITH 1) connection.release) it('',async()=>{authdata = usermodel.authenticate(pass,email) expect(authdata.firstname).toBe(user.firstname)})  it(it('',async()=>{authdata = usermodel.authenticate(wrong pass,wrong email ) expect(authdata).toBe(null)}) )  })   })",
+        "category": "fullStack"
+    },
+    {
+        "id": 199,
+        "question": " how to make unit testing for user model all methods ",
+        "answer": " desc> desc>it->expect(method).toBeDefined***  +  desc > (beforeAll+AfterAll+it-> user = create(newuser) expect({user}).equal({user.id,newUser}) + it-> all=model.getall expect(all.length).toBe(2)+ it-> ruser=modle.getone(id) expect(ruser._).toBe(user._)***  + it-> ruser=modle.updata(id,{newValues}) expect(ruser.newvalueskey).tobe(newvalues) it-> rid = model.delete(user.id)) expect(rid).tobe(user.id) ",
+        "category": "fullStack"
+    },
+    {
+        "id": 200,
+        "question": "how to test on routes  ",
+        "answer": "instanse of app var for token , desc>   it(res= request.post(routeUrl).set(Content-type,application/json).send(email,pass) expect(res._).toBe(user._) token = res.body.token)   +   it( wrong email and pass) , desc> it(res= request.get|post|patch|delete(route).set(Content-type,application/json).set(Authorization, Bearer + token))***       ",
+        "category": "fullStack"
+    },
+    {
+        "id": 201,
+        "question": " ",
+        "answer": " ",
+        "category": "fullStack"
+    },
+    {
+        "id": 202,
+        "question": " ",
+        "answer": " ",
+        "category": "fullStack"
+    },
+    {
+        "id": 203,
+        "question": " ",
+        "answer": " ",
+        "category": "fullStack"
+    },
+    {
+        "id": 204,
+        "question": " ",
+        "answer": " ",
+        "category": "fullStack"
+    }
+]
